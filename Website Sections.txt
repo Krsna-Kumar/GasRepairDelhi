@@ -1,0 +1,37 @@
+Header Section:
+
+Logo and business name on the left.
+Navigation menu (Home, About, Services, Reviews, Contact).
+A "Call Now" button.
+Hero Section:
+
+A large background image of a gas stove.
+Bold heading: "We Repair Gas Appliances..."
+Call-to-action button "Call Now" with a rating display.
+Service Features Section:
+
+Icons and brief descriptions (Expert Team, Safe Procedure, Quality Service).
+Who We Are Section:
+
+A small bio/introduction about the service.
+Image of a technician.
+Service Details Section:
+
+Text and images explaining the stove repair service in more detail.
+Services Offered Section:
+
+A gallery of images representing different services (6 images).
+Why Choose Us Section:
+
+A list of reasons explaining why their service is different (e.g., Genuine Parts, 24/7 Support).
+Testimonials Section:
+
+A client review with a 5-star rating.
+Contact Form & Map Section:
+
+A form for customers to fill out (Name, Email, Subject, Message).
+Google Maps embed showing the service area.
+Footer:
+
+Business name, address, and contact details.
+Links to pages (About, Services, etc.).

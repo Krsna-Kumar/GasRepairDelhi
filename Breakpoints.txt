@@ -1,0 +1,8 @@
+Breakpoint	                      Dimensions
+--------------------------------------------
+X-Small		- - - - - - - - - - - - <576px  // X-Small devices (portrait phones, less than 576px)
+Small		- - - - - - - - - - - - ≥576px  // Small devices (landscape phones, 576px and up)
+Medium		- - - - - - - - - - - - ≥768px  // Medium devices (tablets, 768px and up)
+Large		- - - - - - - - - - - - ≥992px  // Large devices (desktops, 992px and up)
+Extra large	- - - - - - - - - - - - ≥1200px // X-Large devices (large desktops, 1200px and up)
+Extra extra large - - - - - - - - - ≥1400px // XX-Large devices (larger desktops, 1400px and up)
