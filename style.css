@@ -67,7 +67,45 @@ li
     --dark-color-accent: #FFAF0F; */
 }
 
-html {font-size: 100%; /* 16px */}
+/* For WebKit browsers (Chrome, Safari, Edge) */
+html::-webkit-scrollbar {
+    width: 12px; /* Adjust the width as needed */
+}
+
+/* Remove scrollbar track background */
+html::-webkit-scrollbar-track {
+    background: transparent; /* No background for the track */
+}
+
+/* Style the scrollbar thumb */
+html::-webkit-scrollbar-thumb {
+    background-color: #FF5436; /* Your desired color */
+    border-radius: 100px; /* Rounded corners */
+    border: none; /* No border around the thumb */
+}
+
+/* Add a hover effect for the scrollbar thumb (optional) */
+html::-webkit-scrollbar-thumb:hover {
+    background-color: #FF5436; /* Same color on hover */
+}
+
+/* For Firefox */
+html {
+    scrollbar-width: thin; /* Makes the scrollbar thin */
+    scrollbar-color: #FF5436 transparent; /* Thumb color and no background */
+}
+
+/* Hide scroll arrows in WebKit browsers */
+html::-webkit-scrollbar-button {
+    display: none; /* Hides the up and down arrows */
+}
+
+
+html 
+{
+    font-size: 100%; /* 16px */
+    scroll-behavior: smooth;
+}
 
 h1 {font-size: 2.5rem; /* 67.36px */}
 
@@ -85,7 +123,9 @@ small {font-size: 0.875rem; /* 12px */}
 {
     color: var(--color-text);
     text-transform: uppercase;
-    font-size: clamp(1vw, 2rem ,3vw);
+    /* font-size: clamp(1vw, 2rem ,3vw); */
+    font-size: clamp(1.1rem, 1.5vw + 0.6rem ,5rem);
+
 }
 
 .page-wrapper
@@ -773,16 +813,54 @@ small {font-size: 0.875rem; /* 12px */}
 
  /*- - - Testimonial Starts - - -*/
 
- .Testimonial > .wcu-img-area
- {
-    height: 350px;
+ .Testimonial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+}
+
+.Testimonial .text-area {
+    width: 40%;
+}
+
+.testimonial-section {
+    width: 60%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    /* border-radius: 8px; */
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    /* padding: 20px; */
+}
+
+.testimonial p {
+    font-style: italic;
+    margin: 0;
+}
+
+.testimonial strong {
+    display: block;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+ .Testimonial {
+    flex-direction: column;
  }
- .Testimonial .wcu-img-area img
+
+ .testimonial-section
  {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
  }
+ .Testimonial .text-area
+ {
+    width: 100%;
+ }
+
+}
 
 
  /*- - - Testimonial Ends - - -*/
@@ -938,11 +1016,13 @@ small {font-size: 0.875rem; /* 12px */}
     .footer {
         grid-template-columns: 1fr; /* Stack columns on smaller screens */
         text-align: center;
+        
     }
+    
 
     .footer-column {
         margin-bottom: 30px;
-   
+        align-items: center;
     }}
 
 .rvtech-brand
