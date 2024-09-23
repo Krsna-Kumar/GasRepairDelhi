@@ -213,12 +213,19 @@ small {font-size: 0.875rem; /* 12px */}
     background: none;
     border: none;
     font-size: 2rem;
+    padding-bottom: 20px;
     color: var(--color-text);
     cursor: pointer;
 }
 
 /* Show the toggle button on smaller screens */
 @media screen and (max-width: 768px) {
+    .header
+    {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
     .btn-action
     {
         background:none;
