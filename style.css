@@ -124,7 +124,7 @@ small {font-size: 0.875rem; /* 12px */}
     color: var(--color-text);
     text-transform: uppercase;
     /* font-size: clamp(1vw, 2rem ,3vw); */
-    font-size: clamp(1.1rem, 1.5vw + 0.6rem ,5rem);
+    font-size: clamp(1.4rem, 1.5vw + 0.6rem ,5rem);
 
 }
 
@@ -166,7 +166,7 @@ small {font-size: 0.875rem; /* 12px */}
     display: flex;
     align-items: center;
     gap: 20px;
-    /* padding: 0 10px; */
+    padding: 0 10px;
     font-family: Poppins;
     font-weight: 600;
     color:#303030;
@@ -175,7 +175,8 @@ small {font-size: 0.875rem; /* 12px */}
 
 .logo img
 {
-    width: clamp(1vw, 10rem ,5vw);
+    /* width: clamp(1vw, 10rem ,5vw); */
+    width: clamp(2.5rem, 4vw ,10rem);
 }
 
 .nav-links
@@ -235,10 +236,12 @@ small {font-size: 0.875rem; /* 12px */}
     .nav-toggle {
         display: block;
         position: absolute;  
-        top: 20px;           
-        right: 20px;        
+        top: 50%; 
+        right: 0px; 
+        transform: translateY(-50%);
         z-index: 10;         
     }
+    
 
     /* Default hidden state */
 .nav-links {
